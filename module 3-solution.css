@@ -1,0 +1,117 @@
+/* Main page nav bar */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box
+    
+}
+body{
+    background-color: black !important;
+}
+
+.logo{
+    margin: 10px 10px 10px 10px ;
+    height: 60px;
+    width: 60px;
+    -webkit-animation: spin 5s infinite;
+    animation: spin 2s infinite;
+ }
+ 
+ @-webkit-keyframes spin{
+   from {
+     -webkit-transform: rotateY(0deg);
+   }
+   to {
+     -webkit-transform: rotateY(-360deg);
+   }
+ }
+ 
+ @keyframes spin{
+   from {
+     -moz-transform: rotateY(0deg);
+     -ms-transform: rotateY(0deg);
+     transform: rotateY(0deg);
+   }
+   
+   to {
+     -moz-transform: rotateY(-360deg);
+     -ms-transform: rotateY(-360deg);
+     transform: rotateY(-360deg);
+   }
+ }
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-light .navbar-brand{
+    color: white !important;
+    font-size: 20px;
+    font-weight: 900;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white !important;
+}
+.navbar-light .navbar-nav .active> .nav-link{
+    background-color: orange;
+    
+}
+.nav-item:hover{
+    /* background-color: aqua; */
+    font-size:17px;
+    font-weight: 900;
+    border: 2px solid #D0001B;
+    background-color: orange;
+
+ 
+}
+.navbar-light .navbar-toggler{
+    color: #800000 !important;
+    border-color: aqua !important;
+}
+.Home-div{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    animation-name: menu;
+    animation-duration: 5s;
+
+}
+@keyframes menu{
+    
+    0%   {background-color:  white;
+    color: orange;
+}
+  25%  {background-color: aqua;
+    color: red;
+}
+  50%  {background-color: blue;color:aqua;
+}
+  100% {background-color:orange;color: #800000;
+}
+
+  
+}
+.Home-div{
+    background-color: orange
+}
+.dish-detail{
+    background-color: #5d6475;
+    color:white;
+    padding: 10px 15px 15px 15px;
+    margin:40px;
+}
+
+.dish-detail-h1{
+    font-size: 24px;
+    
+    text-align: center;
+}
+
+@media(min-width: 992px){
+    .navbar-nav{
+        display: none !important;
+    }
+    
+
+}
